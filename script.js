@@ -25,4 +25,4 @@ console.log(diceNumber);
 // document.getElementById('score--0').textContent = player1.score;
 // console.log(player1.score);
 
-// document.querySelector('.dice').src = 'dice-1.png';
+document.querySelector('.dice').src = `dice-${diceNumber}.png`;
