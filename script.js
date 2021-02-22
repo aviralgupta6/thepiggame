@@ -1,7 +1,7 @@
 'use strict';
 
-let diceNumber = Math.trunc(Math.random() * 6) + 1;
-console.log(diceNumber);
+// let diceNumber = Math.trunc(Math.random() * 6) + 1;
+// console.log(diceNumber);
 
 // const player1 = {
 //   name: document.getElementById('name--0').textContent,
@@ -25,4 +25,12 @@ console.log(diceNumber);
 // document.getElementById('score--0').textContent = player1.score;
 // console.log(player1.score);
 
-document.querySelector('.dice').src = `dice-${diceNumber}.png`;
+// document.querySelector('.dice').src = `dice-${diceNumber}.png`;
+
+const rollDice = document.getElementById('roll-dice');
+rollDice.addEventListener('click', function () {
+  let diceNumber = Math.trunc(Math.random() * 6) + 1;
+  console.log('click', diceNumber);
+  document.querySelector('.dice').src = `dice-${diceNumber}.png`;
+});
+// console.log(rollDice);
